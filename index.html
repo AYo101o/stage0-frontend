@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article class="profile-card" data-testid="test-profile-card">
+      <figure class="profile-avatar">
+        <img
+          src="images/avatar.png"
+          alt="User Avatar"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+      <section class="profile-info">
+        <header>
+          <h2 data-testid="test-user-name">John Doe</h2>
+        </header>
+
+        <p data-testid="test-user-bio">
+          I’m a frontend developer passionate about accessibility and clean
+          design. 
+        </p>
+
+        <p data-testid="test-user-time" id="userTime"></p>
+
+        <nav data-testid="test-user-social-links">
+          <ul>
+            <li>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <section data-testid="test-user-hobbies">
+          <h3>Hobbies</h3>
+          <ul>
+            <li>Gaming</li>
+            <li>Coding</li>
+            <li>Photography</li>
+          </ul>
+        </section>
+
+        <section data-testid="test-user-dislikes">
+          <h3>Dislikes</h3>
+          <ul>
+            <li>Slow internet</li>
+            <li>Noise</li>
+          </ul>
+        </section>
+      </section>
+    </article>
+    <script src="script.js"></script>
+  </body>
+</html>

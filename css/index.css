@@ -4,6 +4,54 @@
   padding: 0;
 }
 
+/* General link styling */
+a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover and focus states */
+a:hover,
+a:focus {
+  color: #005fa3;
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+/* Navigation (contact/about) links */
+header a {
+  margin-right: 1rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header a:hover {
+  background: #0077cc;
+  color: white;
+}
+
+/* Social links list */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #0077cc;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #005fa3;
+}
+
+
 /* Body */
 body {
   font-family: "Poppins", system-ui, sans-serif;

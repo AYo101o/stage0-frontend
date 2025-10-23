@@ -1,0 +1,106 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", system-ui, sans-serif;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  color: #2d3436;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Main container */
+main[data-testid="test-about-page"] {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 800px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Back button */
+button {
+  background-color: #6c5ce7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0984e3;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #2d3436;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: #6c5ce7;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Paragraphs */
+p {
+  color: #636e72;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Section spacing */
+section {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  main[data-testid="test-about-page"] {
+    padding: 1.2rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

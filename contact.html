@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <main>
+      <button onclick="history.back()">← Back</button>
+      <form>
+        <label for="name">Full Name</label
+        ><input
+          id="name"
+          data-testid="test-contact-name"
+          required
+          name="name"
+          type="text"
+          aria-describedby="test-contact-error-name"
+        />
+        <p data-testid="test-contact-error-name" hidden>Invalid Fullname</p>
+
+        <label for="email">Email</label
+        ><input
+          data-testid="test-contact-email"
+          name="email"
+          required
+          type="email"
+          aria-describedby="test-contact-error-email"
+        />
+        <p data-testid="test-contact-error-email" hidden>
+          Email must be in a valid format, e.g., name@example.com
+        </p>
+
+        <label for="subject">Subject</label
+        ><input
+          data-testid="test-contact-subject"
+          required
+          type="text"
+          name="subject"
+          aria-describedby="test-contact-error-subject"
+        />
+        <p data-testid="test-contact-error-subject" hidden>cannot be empty</p>
+
+        <label for="message">Message</label
+        ><textarea
+          data-testid="test-contact-message"
+          name="message"
+          required
+          placeholder="Your Message"
+          aria-describedby="test-contact-error-message"
+        ></textarea>
+        <p data-testid="test-contact-error-message" hidden>
+          Message cannot be empty
+        </p>
+
+        <button data-testid="test-contact-submit" type="submit">Submit</button>
+        <p data-testid="test-contact-success" hidden>Sent Successfully</p>
+      </form>
+    </main>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
